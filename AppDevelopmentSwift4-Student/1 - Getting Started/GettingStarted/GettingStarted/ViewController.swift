@@ -1,3 +1,11 @@
+//
+//  ViewController.swift
+//  GettingStarted
+//
+//  Created by Mac on 3/31/18.
+//  Copyright © 2018 Mac. All rights reserved.
+//
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -5,17 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let sample = "sample"
-        print(sample)
-        
-        if false {
-        }
-        
-        
-    }
-    
-    func someMethod() {
-
     }
 
     override func didReceiveMemoryWarning() {
