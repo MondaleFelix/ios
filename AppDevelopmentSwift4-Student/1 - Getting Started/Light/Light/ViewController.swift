@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lightButton: UIButton!
     var lightOn = true;
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -29,8 +31,11 @@ class ViewController: UIViewController {
 
     func updateUI(){
         if lightOn {
+//          UIButton has a built in function called     setTitle that changes the text of the button
+//            lightButton.setTitle("Off", for: .normal)
             view.backgroundColor = .white
         } else {
+//            lightButton.setTitle("On", for: .normal)
             view.backgroundColor = .black
         }
     }
