@@ -29,6 +29,8 @@ class ViewController: UIViewController {
     }
 
     func updateUI(){
+//      If lightOn is True then backgroundcolor is white
+//      If false then backgroundcolor is black
         view.backgroundColor = lightOn ? .white : .black
 //        if lightOn {
 //            view.backgroundColor = .white
