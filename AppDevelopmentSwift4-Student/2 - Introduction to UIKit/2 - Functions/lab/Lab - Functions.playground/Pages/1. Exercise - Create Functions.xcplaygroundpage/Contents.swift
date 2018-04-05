@@ -4,7 +4,7 @@
  Write a function called `introduceMyself` that prints a brief introduction of yourself. Call the funtion and observe the printout.
  */
 func introduceMyself(){
-    print("Hello I am Mondale")
+    print("Hello, I am Mondale")
 }
 
 introduceMyself()
@@ -28,7 +28,7 @@ func magicEightBall(){
     case 4:
         print("Nah")
     default:
-        print("Something wrong")
+        print("Somethings wrong")
     }
 }
 
