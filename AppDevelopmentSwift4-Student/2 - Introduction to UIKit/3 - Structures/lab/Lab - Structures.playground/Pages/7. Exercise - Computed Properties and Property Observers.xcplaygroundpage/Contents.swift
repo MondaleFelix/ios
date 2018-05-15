@@ -26,9 +26,6 @@ print(firstRectangle.area)
  */
 struct Height {
     var heightInInches: Double{
-        willSet{
-            print("Changing this bitch")
-        }
         didSet{
             if heightInCentimeters == oldValue * 2.54{
                 heightInCentimeters = heightInInches * 2.54
@@ -38,7 +35,9 @@ struct Height {
     
     var heightInCentimeters: Double{
         didSet{
-            
+            if heightInInches == oldValue / 2.54{
+                heightInInches = heightInCentimeters / 2.54
+            }
         }
     }
     
@@ -54,5 +53,6 @@ struct Height {
 }
 
 var myHeight = Height(heightInInches: 60)
-myHeight.heightInInches = 100
+myHeight.heightInInches = 200
+print(myHeight.heightInCentimeters)
 //: [Previous](@previous)  |  page 7 of 10  |  [Next: App Exercise - Mile Times and Congratulations](@next)
