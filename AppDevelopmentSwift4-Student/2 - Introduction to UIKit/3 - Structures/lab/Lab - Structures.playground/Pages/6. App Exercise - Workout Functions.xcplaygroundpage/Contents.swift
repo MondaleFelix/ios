@@ -24,5 +24,15 @@ firstRun.postWorkoutStats()
 struct Steps { 
     var steps: Int
     var goal: Int
+    
+    mutating func takeStep(){
+        steps += 1
+    }
 }
+
+var firstDay = Steps(steps: 100, goal: 1000)
+print(firstDay.steps)
+firstDay.takeStep()
+print(firstDay.steps)
+
 //: [Previous](@previous)  |  page 6 of 10  |  [Next: Exercise - Computed Properties and Property Observers](@next)

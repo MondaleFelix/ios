@@ -50,9 +50,6 @@ struct Distance {
 var mile = Distance(meters: 1600)
 print(mile.feet)
 
-/*:
- Now create another instance of `Distance` and give it some other distance. Ensure that both properties are set correctly.
- */
 
 
 //: [Previous](@previous)  |  page 4 of 10  |  [Next: Exercise - Methods](@next)
