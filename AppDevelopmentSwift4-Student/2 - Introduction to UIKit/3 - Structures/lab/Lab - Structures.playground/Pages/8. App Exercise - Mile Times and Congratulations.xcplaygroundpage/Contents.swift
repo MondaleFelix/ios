@@ -7,7 +7,19 @@
  
  Create an instance of `RunningWorkout` and print the `averageMileTime` property. Check that it works properly.
  */
+struct RunningWorkout {
+    var distance: Double
+    var time: Double
+    var elevation: Double
+    
+    var averageMileTime: Double{
+        return time / distance
 
+    }
+}
+
+var firstWorkout = RunningWorkout(distance: 50, time: 300, elevation: 4)
+print(firstWorkout.averageMileTime)
 /*:
  In other app exercises, you've provided encouraging messages to the user based on how many steps they've completed. A great place to check whether or not you should display something to the user is in a property observer.
  
