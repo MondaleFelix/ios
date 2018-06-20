@@ -7,7 +7,8 @@
  
  Using arrays of type `String`, create at least two lists, one for walking challenges, and one for running challenges. Each should have at least two challenges and should be initialized using an array literal. Feel free to create more lists for different activities.
  */
-
+var walkingChallenges = ["Walk three times a day", "Walk atleast 4 mph"]
+var runningChallenges = ["Run 4 times a week", "Run fast"]
 
 /*:
  In your app you want to show all of these lists on the same screen grouped into sections. Create a `challenges` array that holds each of the lists you have created (it will be an array of arrays). Using `challenges`, print the first element in the second challenge list.

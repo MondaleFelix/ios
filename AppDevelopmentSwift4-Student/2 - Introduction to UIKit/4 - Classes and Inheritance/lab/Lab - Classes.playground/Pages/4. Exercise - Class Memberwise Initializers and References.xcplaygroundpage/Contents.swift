@@ -4,7 +4,7 @@
  - Note: The exercises below are based on a game where a spaceship avoids obstacles in space. The ship is positioned at the bottom of a coordinate system and can only move left and right while obstacles "fall" from top to bottom. The base class `Spaceship` and subclasses `Fighter` and `ShieldedShip` have been provided for you below. You will use these to complete the exercises.
  */
 class Spaceship {
-    let name: String
+    var name: String
     var health: Int
     var position: Int
 
@@ -19,6 +19,12 @@ class Spaceship {
     func wasHit() {
         health -= 5
     }
+    
+    init(name: String, health: Int, position: Int) {
+        self.name = name
+        self.health = health
+        self.position = position
+    }
 }
 
 class Fighter: Spaceship {
@@ -32,10 +38,16 @@ class Fighter: Spaceship {
             print("You have no more fire power.")
         }
     }
+    
+    init(name: String, health: Int, position: Int, weapon: String, remainingFirePower: Int){
+        self.name = super.name
+        self.health
+    }
+
 }
 
 class ShieldedShip: Fighter {
-    var shieldStrength: Int
+    var shieldStrength: Int = 0
     
     override func wasHit() {
         if shieldStrength > 0 {
@@ -50,7 +62,8 @@ class ShieldedShip: Fighter {
  
  Then create an instance of `Spaceship` below called `falcon`. Use the memberwise initializer you just created. The ship's name should be "Falcon."
  */
-
+var falcon = Spaceship(name: "Falcon")
+print(falcon.name)
 
 /*:
  Writing initializers for subclasses can get tricky. Your initializer needs to not only set the properties declared on the subclass, but also set all of the uninitialized properties on classes that it inherits from. Go to the declaration of `Fighter` and write an initializer that takes an argument for each property on `Fighter` and for each property on `Spaceship`. Set the properties accordingly. (Hint: you can call through to a superclass' initializer with `super.init` *after* you initialize all of the properties on the subclass).
