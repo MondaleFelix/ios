@@ -30,3 +30,4 @@ paces["Sprint"] = nil
  When a user chooses a pace, you want the app to print a statement stating that it will keep him/her on pace. Imagine a user chooses "Medium." Accessing the value from the dictionary, print a statement saying "Okay! I'll keep you at a <INSERT PACE VALUE HERE> minute mile pace."
  */
 //: [Previous](@previous)  |  page 4 of 4
+print(paces["Medium"])

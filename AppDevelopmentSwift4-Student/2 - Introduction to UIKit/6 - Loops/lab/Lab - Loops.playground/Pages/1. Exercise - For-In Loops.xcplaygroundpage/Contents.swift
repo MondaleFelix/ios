@@ -10,10 +10,15 @@
  */
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-
+for (index, letter) in alphabet.enumerated(){
+    print("\(letter) : \(index)")
+}
 /*:
  Create a `[String: String]` dictionary, where the keys are names of states and the values are their capitals. Include at least three key/value pairs in your collection, then use a for-in loop to iterate over the pairs and print out the keys and values in a sentence.
  */
+var states : [String : String] = ["California" : "Sacramento", "Utah" : "Salt Lake City", "Nevada" : "Carson City"]
 
-
+for (state, city) in states {
+    print("The capital of \(state) is \(city)")
+}
 //: page 1 of 6  |  [Next: App Exercise - Movements](@next)
