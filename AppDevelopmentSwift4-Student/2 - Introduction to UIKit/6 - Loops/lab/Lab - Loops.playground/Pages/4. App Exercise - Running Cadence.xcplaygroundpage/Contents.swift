@@ -11,6 +11,14 @@ import Foundation
 let cadence: Double = 180
 var testSteps = 0
 
+func takeStep(){
+    testSteps += 1
+}
+
+while testSteps != 10{
+    print("Take a step")
+    takeStep()
+}
 
 /*:
  Recreate the above cadence example using a repeat-while loop.
